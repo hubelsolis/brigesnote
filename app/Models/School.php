@@ -15,6 +15,7 @@ class School extends Model
 
     protected $fillable = [
         'codMod',
+        'idDistrito',
         'nombreCenEdu',
         'cenPob',
         'dirCen',

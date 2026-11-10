@@ -1,12 +1,78 @@
-/node_modules
-/public/hot
-/public/storage
-/storage/*.key
+# Composer & Dependencias PHP
 /vendor
+
+# Node & Dependencias Frontend
+/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Variables de entorno y llaves secretas
 .env
 .env.backup
+.env.production
+.env.*.local
+*.key
+
+# Caché y archivos compilados de Laravel
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+
+/storage/app/*
+!/storage/app/.gitignore
+!/storage/app/public
+
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+!/storage/framework/cache/data
+
+/storage/framework/cache/data/*
+!/storage/framework/cache/data/.gitignore
+
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+
+/storage/logs/*
+!/storage/logs/.gitignore
+
+/public/storage
+/public/hot
+
+# Tests & Herramientas
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
-npm-debug.log
-yarn-error.log
+
+# Respaldos de base de datos
+*.sql
+*.sqlite
+*.sqlite-journal
+
+# Editores e IDEs (VS Code, PhpStorm, Sublime)
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de Sistema Operativo (Windows, macOS)
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+._*

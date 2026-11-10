@@ -168,6 +168,7 @@ class SyncLocations extends Command
             School::updateOrCreate(
                 ['codMod' => $schools['codMod']],
                 [
+                    'idDistrito' => $districtId,
                     'nombreCenEdu' => $schools['cenEdu']?? null,
                     'cenPob' => $schools['cenPob']?? null,
                     'dirCen' => $schools['dirCen']?? null,
@@ -181,6 +182,7 @@ class SyncLocations extends Command
                 School::updateOrCreate(
                     ['codMod' => $school['codMod']],
                     [
+                        'idDistrito' => $districtId,
                         'nombreCenEdu' => $school['cenEdu'],
                         'cenPob' => $school['cenPob'],
                         'dirCen' => $school['dirCen'],
